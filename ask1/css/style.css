@@ -1,0 +1,16 @@
+table{
+    background: rgb(241, 146, 241);
+    border:0.3rem solid rgb(71, 203, 226);
+    border-radius: 10px;
+}
+
+th{
+    background:rgb(50, 50, 131) ;
+    color: rgb(241, 146, 241);
+}
+
+td{
+    border-bottom:0.2rem solid black ;
+    border-right: 0.2rem solid black ;
+}
+
