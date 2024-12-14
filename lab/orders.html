@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    
+    <link rel="stylesheet" href="css/styleorders.css">
+    
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- dropdown -->
+        <select  class="categorySelect" name="category">
+            <option value="all">Ολα τα πιατα</option>
+            <option value="starters">ΟΡΕΚΤΙΚΑ</option>
+            <option value="main">ΚΥΡΙΟΣ</option>
+            <option value="drinks">ΠΟΤΑ</option>
+        </select>
+
+        <!-- products -->
+        <div class="products">
+            <div class="starters">
+                <h2>ΟΡΕΚΤΙΚΑ</h2>
+                <div class="patates">
+                    <div class="item"><img src="imgs/starters/patates.png" alt="">
+                    <button onclick="addToCard('Πατατες', 4)" >Πατατες - 4€</button></div>
+                </div>
+                <div class="melitzana">
+                    <div class="item"><img src="imgs/starters/melitzana.png" alt="">
+                    <button onclick="addToCard('Μελιτζανα', 4)" >Μελιτζανα - 4€</button></div>
+                </div>
+                <div class="feta_meli">
+                    <div class="item"><img src="imgs/starters/feta_meli.png" alt="">
+                    <button onclick="addToCard('Φετα μελι', 5)" >Φετα μελι - 5€</button></div>
+                </div>
+                <div>
+                    <div class="item"><img src="imgs/starters/kolokithakia.png" alt="">
+                    <button onclick="addToCard('Κολοκυθακια', 3)" >Κολοκυθακια - 3€</button></div>
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>ΚΥΡΙΟΣ</h2>
+                <div class="giaourtlou">
+                    <div class="item"><img src="imgs/main/giaourtlou.png" alt="">
+                    <button onclick="addToCard('Γιαουρτλού', 9)" >Σουτζουκάκια γιαουρτλού - 9€</button></div>
+                </div>
+                <div class="kotopoulo">
+                    <div class="item"><img src="imgs/main/kotopoulo.png" alt="">
+                    <button onclick="addToCard('Κοτοπουλο', 7)" >Κοτοπουλο - 7€</button></div>
+                </div>
+                <div class="saganaki">
+                    <div class="item"><img src="imgs/main/saganaki.png" alt="">
+                    <button onclick="addToCard('Μύδια σαγανάκι', 8)" >Μύδια σαγανάκι - 8€</button></div>
+                </div>
+                <div class="tigania">
+                    <div class="item"><img src="imgs/main/tigania.png" alt="">
+                    <button onclick="addToCard('Χοιρινή τηγανιά', 7)" >Χοιρινή τηγανιά - 7€</button></div>
+                </div>
+            </div>
+
+            <div class="drinks">
+                <h2>ΠΟΤΑ</h2>
+                <div class="krasi">
+                    <div class="item"><img src="imgs/drinks/krasi.png" alt="">
+                    <button onclick="addToCard('Κρασι', 6)" >Κρασι - 6€</button></div>
+                </div>
+                <div class="mpira">
+                    <div class="item"><img src="imgs/drinks/mpira.png" alt="">
+                    <button onclick="addToCard('Μπυρα', 4)" >Μπυρα - 4€</button></div>
+                </div>
+                <div class="retsina">
+                    <div class="item"><img src="imgs/drinks/retsina.png" alt="">
+                    <button onclick="addToCard('Ρετσινα', 5)" >Ρετσινα - 5€</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tamio -->
+        <div class="cart" id="cart">
+            <p>Αδειο καροτσι</p>
+        </div>
+
+        <!-- apostoli -->
+        <div class="total" id="total">
+            <button id="readyButton">Το καλαθι σου ειναι αδειο</button>
+        </div>
+
+        <div id="overlay" class="hidden">
+            <div id="messageBox">
+                <p>Η παραγγελια σου σταλθηκε</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
